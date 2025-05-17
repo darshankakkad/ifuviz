@@ -1,1 +1,3 @@
-TBC
+from setuptools import setup
+
+setup()
