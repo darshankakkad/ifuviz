@@ -1,1 +1,19 @@
-TBC: 
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ifuviz"
+version = "0.0.0"
+description = "Interactive IFU data viewer"
+authors = [{name = "Darshan Kakkad", email = "darshankakkad@gmail.com"}]
+license = {text = "NA"}
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+  "matplotlib",
+  "numpy"
+]
+
+[project.scripts]
+ifuviz = "ifuviz:main"
