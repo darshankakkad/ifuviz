@@ -1,4 +1,6 @@
-from .ifuviz import viztool
+from ifuviz.viztool import initiate_viztool
+from ifuviz.loaddata import load_cube
 
 def main():
-    launch_viewer(cube, model_cube, wavelength)
+    sci_cube, wl = load_cube()
+    initiate_viztool(sci_cube, wl)
